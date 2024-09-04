@@ -1,0 +1,70 @@
+Erinäisiä kokeiltuja komentoja selaimen konsolissa
+Tekstitiedosto yksinkertaisena kokoelmana
+Ei sisällä kaikkia kokeiltuja komentojen muunnoksia
+
+
+
+document.write("Hello World!")
+
+alert("Hello World")
+
+console.log("Hello World")
+
+prompt("Anna nimesi...") 
+
+confirm("Haluatko jatkaa?")
+
+
+
+var x = 5;
+var y = 6;
+var z = x + y;
+console.log(z);
+alert(z);
+document.write(z);
+
+
+var x = 55;
+var order = 'Beer';
+if (x > 50) {
+document.write("<b>He's over 50!</b>");
+} else if (x <= 50 && x> 30){
+document.write("<i>Middle aged man</i>, who ordered some "+order);
+} else {
+document.write("It seems you're bit underaged.");
+}
+
+
+var arr = [];
+for (var i=0; i<15; i++) {
+arr.push(Math.random());
+}
+console.log(arr); 
+
+
+function addNumbers(a, b) {
+    return a + b;
+}
+
+var numA = Number(prompt("Anna ensimmäinen luku"))
+var numB = Number(prompt("Anna toinen luku"))
+var total = addNumbers(numA, numB)
+
+if (total > 100) {
+    alert("Yli sata!")
+}
+
+console.log("Tulos: " + total)
+
+
+
+var person = {
+firstName:"John",
+lastName:"Doe",
+age:50,
+eyeColor:"blue",
+address:"Street 1",
+telephone:"012345"
+};
+console.log(person.age);
+console.log(person.address);
